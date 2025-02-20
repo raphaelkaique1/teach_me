@@ -45,7 +45,7 @@ teach_me/
 └── vite.config.ts
 ```
 
-![Image](https://github.com/user-attachments/assets/5b4102ba-f6ae-491e-8067-273f8e61969f)
+<a href="https://github.com/user-attachments/assets/5b4102ba-f6ae-491e-8067-273f8e61969f"><img src="https://raphaelkaique1.github.io/teach_me/dist/"/></a>
 
 ---
 
