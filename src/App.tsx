@@ -39,13 +39,13 @@ function App() {
 
             setChat(text => [...text, messageGPT]);
 
-            setLoading(true)
+            setLoading(true);
             
-            const questionGPT = await sendMessage([messageGPT])
+            const questionGPT = await sendMessage([messageGPT]);
             
             setChat(text => [...text, {role: 'system', content: questionGPT.content}]);
             
-            setLoading(false)
+            setLoading(false);
 
             return;
         }
@@ -56,10 +56,10 @@ function App() {
         }
 
         setChat(text => [...text, responseUser]);
-        setLoading(true)
-        const feedbackGPT = await sendMessage([...chat, responseUser])
+        setLoading(true);
+        const feedbackGPT = await sendMessage([...chat, responseUser]);
         setChat(text => [...text, {role: 'system', content: feedbackGPT.content}]);
-        setLoading(false)
+        setLoading(false);
         setProgress('done');
 
     }

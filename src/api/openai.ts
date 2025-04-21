@@ -9,11 +9,12 @@ type Message = {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ messages }),
+      body: JSON.stringify({ messages })
     });
   
     if (!response.ok) {
-      throw new Error('Erro ao comunicar com o servidor');
+      const errorData = await response.json();
+      throw new Error(errorData.error || 'Erro ao acessar a API');
     }
   
     const data = await response.json();
