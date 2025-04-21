@@ -1,9 +1,9 @@
 {
   "name": "teach_me",
   "private": true,
-  "home": "/teach_me/dist/",
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://raphaelkaique1.github.io/teach_me/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
