@@ -29,7 +29,7 @@ function App() {
             setHistoric(message);
             setProgress('started');
 
-            const prompt = `Gere uma pergunta onde simule uma entrevista de emprego sobre ${message}, após essa pergunta enviarei a resposta e você me dará um feedback. O feedback precisa ser simples, objetivo e corresponder fielmente a resposta enviada. Após o feedback não existirá mais interação.`
+            const prompt = `Gere uma pergunta técnica ou um desafio com uma tarefa a cumprir programando onde simule uma entrevista de emprego sobre ${message}, após essa pergunta ou desafio enviarei a resposta e você me dará um feedback. O feedback precisa ser simples, objetivo e corresponder fielmente a resposta enviada. Após o feedback não existirá mais interação.`
 
             const messageGPT: Message = {
                 role: 'user',
